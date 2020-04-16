@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-RUN apk add --no-cache inotify-tools jq
+RUN apk add --no-cache inotify-tools jq curl
 
 WORKDIR /opt/nuvlabox-mock-peripheral-manager
 
