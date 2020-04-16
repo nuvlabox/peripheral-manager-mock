@@ -19,7 +19,7 @@ Make sure you have `docker buildx`. If not, have a look at: https://docs.docker.
 # Create the build context:
 docker buildx create --name multiplatformbuilder --use
 
-# Bootstrap the context and make sure you're targeted platforms are supported by it
+# Bootstrap the context and make sure your targeted platforms are supported by it
 docker buildx inspect --bootstrap
 
 # Build and push the Docker image
