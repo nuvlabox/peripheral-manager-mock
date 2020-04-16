@@ -69,7 +69,13 @@ nuvlabox_delete_peripheral() {
   fi
 }
 ####
+# End of NuvlaBox Agent API functions
+####
 
+
+######
+# MAIN
+######
 
 # We are only interested in getting notified whenever our mock peripheral is plugged and unplugged
 inotifywait -m -e create -e delete /dev |
