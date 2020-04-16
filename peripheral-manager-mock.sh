@@ -35,7 +35,7 @@ nuvlabox_add_peripheral() {
   http_code=$(echo ${response} | awk '{print $NF}')
   output=$(echo ${response} | awk '{$NF=""; print $0}')
 
-  if [[ "${output}" = "201" ]]
+  if [[ "${http_code}" = "201" ]]
   then
     echo "INFO: successfully registered new peripheral $(echo ${output} | jq -re '."resource-id"')"
   else
@@ -61,7 +61,7 @@ nuvlabox_delete_peripheral() {
   http_code=$(echo ${response} | awk '{print $NF}')
   output=$(echo ${response} | awk '{$NF=""; print $0}')
 
-  if [[ "${output}" = "200" ]]
+  if [[ "${http_code}" = "200" ]]
   then
     echo "INFO: successfully deleted peripheral ${identifier}"
   else
