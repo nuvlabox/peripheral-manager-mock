@@ -27,3 +27,6 @@ docker buildx inspect --bootstrap
 docker buildx build --platform linux/arm/v6,linux/arm/v7,linux/amd64,linux/arm64 -t <your_image_name> . --push
 ```
 
+## Copyright
+
+Copyright &copy; 2021, SixSq SA
