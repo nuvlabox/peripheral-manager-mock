@@ -29,4 +29,4 @@ docker buildx build --platform linux/arm/v6,linux/arm/v7,linux/amd64,linux/arm64
 
 ## Copyright
 
-Copyright &copy; 2021, SixSq SA
+Copyright &copy; SixSq SA
